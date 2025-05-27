@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/static/Figtree-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    --font-family: 'Figtree', sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: var(--font-family);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    max-width: 24rem;
+    padding: 1.5rem;
+    border: 1px var(--gray-950) solid;
+    border-radius: 1.25rem;
+    gap: 1.5rem;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 1);
+}
+
+p,
+h1 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+figure {
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+}
+
+figure img {
+    border-radius: 1.25rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.content p:nth-of-type(1) {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--yellow);
+    color: var(--gray-950);
+    font-size: 0.875rem;
+    font-weight: 800;
+    border-radius: 0.25rem;
+}
+
+.content p:nth-of-type(2) {
+    color: var(--gray-950);
+    font-size: 0.875rem;
+}
+
+.content p:nth-of-type(3) {
+    color: var(--gray-500)
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.profile img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.profile p {
+    font-weight: 800;
+    font-size: 0.875rem;
+    color: var(--gray-950);
+}
